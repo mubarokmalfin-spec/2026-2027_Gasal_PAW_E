@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #333;
+    background: #fff;
+}
+
+/* ===== Navbar & wadah ===== */
+.navbar {
+    height: 50px;
+    background: linear-gradient(#0f5aa8, #0b3f7a);
+    border-bottom: 1px solid #08305e;
+}
+
+.brand {
+    display: inline-block;
+    padding: 0 15px;
+    line-height: 50px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    width: 970px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ===== Judul ===== */
+h2 {
+    margin: 20px 0 10px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #428bb6;
+}
+
+h2 small {
+    font-size: 14px;
+    color: #999;
+}
+
+/* ===== Form filter ===== */
+.filter {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.filter label {
+    font-weight: 700;
+}
+
+.filter input {
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-family: inherit;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* ===== Tombol ===== */
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-family: inherit;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-success {
+    background: linear-gradient(#5cb85c, #419641);
+    border-color: #3e8f3e;
+}
+
+.btn-warning {
+    background: linear-gradient(#e8710a, #c9560a);
+    border-color: #b9500a;
+}
+
+.btn-primary {
+    background: linear-gradient(#1a6fc0, #0f5aa8);
+    border-color: #0b4a8c;
+}
+
+.aksi {
+    margin-bottom: 15px;
+}
+
+/* ===== Pesan ===== */
+.alert {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    color: #a94442;
+    background: #f2dede;
+    border: 1px solid #ebccd1;
+    border-radius: 4px;
+}
+
+.kosong {
+    color: #777;
+    font-style: italic;
+}
+
+/* ===== Grafik ===== */
+.grafik {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 15px;
+}
+
+/* ===== Tabel rekapitulasi ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    font-size: 12px;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+thead th {
+    color: #31708f;
+    background: #d9edf7;
+    border-bottom: 2px solid #ddd;
+}
+
+/* ===== Card ringkasan ===== */
+.ringkasan {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.card {
+    width: 220px;
+    padding: 10px 14px;
+    color: #31708f;
+    background: #d9edf7;
+    border: 1px solid #bce8f1;
+    border-radius: 4px;
+}
+
+.card-judul {
+    font-size: 13px;
+}
+
+.card-nilai {
+    margin-top: 6px;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: right;
+}
+
+/* ===== Aturan saat dicetak: sembunyikan form & tombol ===== */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
